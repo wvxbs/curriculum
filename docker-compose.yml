@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  web:
+    image: wvxbs/curriculum
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000
+    path:
+      - .:/web
