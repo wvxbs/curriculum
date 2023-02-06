@@ -12,3 +12,12 @@ services:
       - 3000:3000
     volumes:
       - .:/web
+    restart: on-failure
+
+  nginx:
+    build: ./nginx
+    ports:
+    - '80:80'
+    restart: on-failure
+    depends_on:
+      - web
