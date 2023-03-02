@@ -1,8 +1,14 @@
 const Header = props => {
+
+    const GetCurrentYear = () => {
+        const CurrentTime = new Date()
+        return CurrentTime.getFullYear()
+    }
+
     return (
         <nav class="navbar fixed-bottom navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Gabriel Ferreira</a>
+                <div class="navbar-brand" href="#">{GetCurrentYear()} <span className="fw-bold fst-italic">São Paulo, Brasil</span></div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
