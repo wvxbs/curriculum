@@ -6,7 +6,7 @@ const Header = props => {
     }
 
     return (
-        <nav class="navbar fixed-bottom navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar fixed-bottom navbar-expand-lg bg-white">
             <div class="container-fluid">
                 <div class="navbar-brand" href="#">{GetCurrentYear()} <span className="fw-bold fst-italic">São Paulo, Brasil</span></div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,6 +19,9 @@ const Header = props => {
                         </li>
                         <li class="nav-item">
                         <a class="nav-link" href="#">Informações</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Educação</a>
                         </li>
                     </ul>
                 </div>
