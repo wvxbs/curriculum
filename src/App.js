@@ -7,7 +7,7 @@ function App() {
   const router = createBrowserRouter([
     {
       path : '/',
-      element: <div>OIIII</div>
+      element: <Home />
     } 
   ])
 
